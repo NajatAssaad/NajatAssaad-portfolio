@@ -471,8 +471,418 @@ a {
     color: #071a2b;
     font-size: 14px;
     font-weight: 600;
-
     margin: 0;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    background-color: #fbfafa;
+    color: #071a2b;
+    padding: 70px 7%;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* =========================
+   PROJECTS HEADING
+========================= */
+
+.projects .section-label {
+    margin-bottom: 10px;
+}
+
+.projects h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   PROJECTS GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    text-align: left;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 22px rgba(7, 26, 43, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(7, 26, 43, 0.14);
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+    padding: 24px;
+}
+
+.project-content h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.project-description {
+    color: #4f5862;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.project-technologies span {
+    background-color: #f3eadc;
+    color: #8f682d;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   VIEW PROJECT
+========================= */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #b68132;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-link i {
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: #071a2b;
+}
+
+.project-link:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   VIEW ALL PROJECTS
+========================= */
+
+.all-projects {
+    margin-top: 35px;
+}
+
+.all-projects a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f2cf91;
+    color: #071a2b;
+    padding: 15px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #f2cf91;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.all-projects a:hover {
+    background-color: #e6b86a;
+    transform: translateY(-2px);
+}
+
+.all-projects i {
+    transition: transform 0.3s ease;
+}
+
+.all-projects a:hover i {
+    transform: translateX(4px);
+}
+
+/* =========================
+   FOOTER / CONTACT
+========================= */
+
+.footer {
+    background-color: #071a2b;
+    color: white;
+    padding: 60px 7% 25px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   FOOTER CONTENT
+========================= */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    padding-right: 50px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer .section-label {
+    color: #e6b86a;
+
+    margin-bottom: 14px;
+}
+
+.contact-info h2 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+.contact-description {
+    max-width: 400px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #e3e6e8;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 14px;
+}
+
+.contact-details i {
+    width: 20px;
+
+    color: #e6b86a;
+
+    font-size: 18px;
+}
+
+.contact-details a {
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #e6b86a;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    padding: 15px 17px;
+
+    outline: none;
+
+    border-radius: 4px;
+
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e6b86a;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #cbd0d5;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.contact-form button {
+    width: 220px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: #f2cf91;
+    color: #071a2b;
+
+    border: 1px solid #f2cf91;
+
+    padding: 14px 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e6b86a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+
+    color: #cbd0d5;
+}
+
+.footer-bottom span {
+    color: #e6b86a;
+
+    margin-left: 5px;
 }
 
 @media (max-width: 768px) {
@@ -822,5 +1232,382 @@ a {
 
     .skill-card:hover {
         transform: none;
+    }
+
+    /* =========================
+   PROJECTS - MOBILE
+========================= */
+
+    .projects {
+        padding: 60px 24px;
+    }
+
+    .projects-container {
+        max-width: 100%;
+    }
+
+
+    /* HEADING */
+
+    .projects .section-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin-bottom: 35px;
+    }
+
+
+    /* GRID */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+
+    /* PROJECT CARD */
+
+    .project-card {
+        border-radius: 8px;
+    }
+
+
+    /* IMAGE */
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-image img {
+        object-fit: cover;
+    }
+
+
+    /* CONTENT */
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .project-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+
+    /* TECHNOLOGIES */
+
+    .project-technologies {
+        gap: 7px;
+        margin-bottom: 18px;
+    }
+
+    .project-technologies span {
+        padding: 5px 9px;
+        font-size: 10px;
+    }
+
+
+    /* VIEW PROJECT */
+
+    .project-link {
+        font-size: 13px;
+    }
+
+
+    /* VIEW ALL PROJECTS */
+
+    .all-projects {
+        margin-top: 30px;
+    }
+
+    .all-projects a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+
+    /* REMOVE DESKTOP HOVER MOVEMENT */
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-card:hover .project-image img {
+        transform: none;
+    }
+
+    /* =========================
+   PROJECTS - MOBILE
+========================= */
+
+    .projects {
+        padding: 60px 24px;
+    }
+
+    .projects-container {
+        max-width: 100%;
+    }
+
+
+    /* HEADING */
+
+    .projects .section-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin-bottom: 35px;
+    }
+
+
+    /* GRID */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+
+    /* PROJECT CARD */
+
+    .project-card {
+        border-radius: 8px;
+    }
+
+
+    /* IMAGE */
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-image img {
+        object-fit: cover;
+    }
+
+
+    /* CONTENT */
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .project-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+
+    /* TECHNOLOGIES */
+
+    .project-technologies {
+        gap: 7px;
+        margin-bottom: 18px;
+    }
+
+    .project-technologies span {
+        padding: 5px 9px;
+        font-size: 10px;
+    }
+
+
+    /* VIEW PROJECT */
+
+    .project-link {
+        font-size: 13px;
+    }
+
+
+    /* VIEW ALL PROJECTS */
+
+    .all-projects {
+        margin-top: 30px;
+    }
+
+    .all-projects a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+
+    /* REMOVE DESKTOP HOVER MOVEMENT */
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-card:hover .project-image img {
+        transform: none;
+    }
+
+    /* =========================
+   FOOTER / CONTACT - MOBILE
+========================= */
+
+    .footer {
+        padding: 60px 24px 25px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+    }
+
+
+    /* =========================
+   MAIN CONTENT
+========================= */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* =========================
+   CONTACT INFORMATION
+========================= */
+
+    .contact-info {
+        padding-right: 0;
+        padding-bottom: 35px;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+        text-align: center;
+    }
+
+    .footer .section-label {
+        font-size: 12px;
+
+        margin-bottom: 12px;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+        line-height: 1.2;
+
+        margin-bottom: 12px;
+    }
+
+    .contact-description {
+        max-width: 400px;
+
+        margin: 0 auto 25px;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+   CONTACT DETAILS
+========================= */
+
+    .contact-details {
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .contact-details p {
+        font-size: 13px;
+
+        gap: 12px;
+    }
+
+    .contact-details i {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+   FORM
+========================= */
+
+    .contact-form {
+        gap: 14px;
+    }
+
+
+    /* Name and Email become vertical */
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 13px;
+
+        padding: 14px 15px;
+    }
+
+    .contact-form textarea {
+        min-height: 130px;
+    }
+
+
+    /* =========================
+   SEND BUTTON
+========================= */
+
+    .contact-form button {
+        width: 100%;
+
+        padding: 14px 20px;
+
+        font-size: 12px;
+    }
+
+
+    /* remove desktop hover movement */
+
+    .contact-form button:hover {
+        transform: none;
+    }
+
+
+    /* =========================
+   COPYRIGHT
+========================= */
+
+    .footer-bottom {
+        margin-top: 30px;
+
+        padding-top: 20px;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+
+        line-height: 1.6;
     }
 }
