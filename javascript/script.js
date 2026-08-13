@@ -2,43 +2,44 @@ const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 const menuIcon = menuToggle.querySelector("i");
 
+const navItems = navLinks.querySelectorAll("a");
+
+
+function openMenu() {
+
+    navLinks.classList.add("active");
+
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-xmark");
+
+    document.body.classList.add("menu-open");
+}
+
+
+function closeMenu() {
+
+    navLinks.classList.remove("active");
+
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+
+    document.body.classList.remove("menu-open");
+}
 
 
 menuToggle.addEventListener("click", () => {
 
-    navLinks.classList.toggle("active");
-
-    const menuIsOpen = navLinks.classList.contains("active");
-
-    if (menuIsOpen) {
-        menuIcon.classList.remove("fa-bars");
-        menuIcon.classList.add("fa-xmark");
-        menuToggle.setAttribute("aria-label", "Close navigation menu");
+    if (navLinks.classList.contains("active")) {
+        closeMenu();
     } else {
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
-
-        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        openMenu();
     }
 
 });
 
 
-// Close menu when a navigation link is selected
-const links = navLinks.querySelectorAll("a");
+navItems.forEach((link) => {
 
-links.forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("active");
-
-        // Change X back to hamburger
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
-
-        menuToggle.setAttribute("aria-label", "Open navigation menu");
-
-    });
+    link.addEventListener("click", closeMenu);
 
 });
